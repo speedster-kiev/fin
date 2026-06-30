@@ -1,0 +1,19 @@
+# Environment
+.env
+
+# Database
+db/finally.db
+
+# Frontend
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+.venv/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
