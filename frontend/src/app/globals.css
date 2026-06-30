@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #0d1117;
+  color: #e5e7eb;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2d3a;
+  border-radius: 3px;
+}
+
+.price-flash-up {
+  animation: flashUp 500ms ease-out forwards;
+}
+
+.price-flash-down {
+  animation: flashDown 500ms ease-out forwards;
+}
+
+@keyframes flashUp {
+  0% {
+    background-color: rgba(34, 197, 94, 0.45);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes flashDown {
+  0% {
+    background-color: rgba(239, 68, 68, 0.45);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
